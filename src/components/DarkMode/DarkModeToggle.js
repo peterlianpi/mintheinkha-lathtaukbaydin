@@ -4,7 +4,6 @@ import { useDarkMode } from "./DarkModeContext";
 import Sun from "./img/sun.svg"; // Replace with the correct path to your sun.svg file
 import Moon from "./img/moon.svg"; // Replace with the correct path to your moon.svg file
 import "./DarkModeToggle.css";
-import "./App.css";
 
 function DarkModeToggle() {
   const { toggleDarkMode, darkMode } = useDarkMode();
