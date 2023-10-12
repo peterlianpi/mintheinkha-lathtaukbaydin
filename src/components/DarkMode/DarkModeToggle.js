@@ -4,6 +4,7 @@ import { useDarkMode } from "./DarkModeContext";
 import Sun from "./img/sun.svg"; // Replace with the correct path to your sun.svg file
 import Moon from "./img/moon.svg"; // Replace with the correct path to your moon.svg file
 import "./DarkModeToggle.css";
+import "./App.css";
 
 function DarkModeToggle() {
   const { toggleDarkMode, darkMode } = useDarkMode();
@@ -21,10 +22,15 @@ function DarkModeToggle() {
     // Update the icon when dark mode changes
     toggleTheme();
   }, [darkMode]);
-
   return (
     <div className="dark-mode-toggle" onClick={toggleDarkMode}>
-      <div className="theme-container">
+      <div
+        className={
+          darkMode
+            ? "theme-container shadow-dark"
+            : "theme-container shadow-light"
+        }
+      >
         <img
           id="theme-icon"
           src={icon} // Set the initial icon based on the theme
