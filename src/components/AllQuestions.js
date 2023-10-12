@@ -1,6 +1,6 @@
 import React from "react";
 import "../App.css";
-import { useDarkMode } from "../DarkModeContext";
+import { useDarkMode } from "./DarkMode/DarkModeContext";
 
 function AllQuestions({ data, onClick }) {
   const { darkMode } = useDarkMode();

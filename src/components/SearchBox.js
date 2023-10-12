@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../App.css";
 import AllQuestions from "./AllQuestions";
-import { useDarkMode } from "../DarkModeContext";
 import Logo from "../mintheinkha_logo.png";
-import "../DarkModeToggle.css";
+import { useDarkMode } from "./DarkMode/DarkModeContext";
+import "./DarkMode/DarkModeToggle.css";
 
 function SearchBox({ data }) {
   const navigate = useNavigate();

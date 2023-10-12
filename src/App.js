@@ -3,10 +3,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./components/SearchBox";
 import NumberSelector from "./components/NumberSelector";
 import AnswerPage from "./components/AnswerPage";
-import { DarkModeProvider } from "./DarkModeContext";
-import DarkModeToggle from "./DarkModeToggle";
+import { DarkModeProvider } from "./components/DarkMode/DarkModeContext";
+import DarkModeToggle from "./components/DarkMode/DarkModeToggle";
 import "./App.css";
-import Nodata from "./components/img/download.png";
+import Nodata from "./components/DarkMode/img/download.png";
 
 function App() {
   const [data, setData] = useState(null);

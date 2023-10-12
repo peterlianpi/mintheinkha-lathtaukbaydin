@@ -3,7 +3,7 @@ import NumberBox from "./NumberBox";
 import { useParams } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import "../App.css";
-import { useDarkMode } from "../DarkModeContext";
+import { useDarkMode } from "./DarkMode/DarkModeContext";
 
 function NumberSelector({ data }) {
   let { questionNo } = useParams();

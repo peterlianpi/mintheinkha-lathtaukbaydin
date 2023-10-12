@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import "../App.css";
-import { useDarkMode } from "../DarkModeContext";
+import { useDarkMode } from "./DarkMode/DarkModeContext";
 import Logo from "../mintheinkha_logo.png";
 
 function AnswerPage({ data }) {
